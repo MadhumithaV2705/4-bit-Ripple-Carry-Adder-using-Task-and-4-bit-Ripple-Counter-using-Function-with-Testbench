@@ -37,7 +37,7 @@ module RippleCarryAdder_4bit (
 endmodule
 
 OUTPUT:
-![Uploading image.png…]()
+![image](https://github.com/user-attachments/assets/2c752767-e664-49eb-8983-914cf6b1cfa6)
 
 // Test bench for Ripple carry adder
 
