@@ -1,13 +1,16 @@
-# 4-bit-Ripple-Carry-Adder-using-Task-and-4-bit-Ripple-Counter-using-Function-with-Testbench
-Aim:
+# 4-BIT-RIPPLE-CARRY-ADDER-USING-TASK-AND-4-BIT-RIPPLE-COUNTER-USING-FUNCTION-WITH-TESTBENCH
+
+# Aim:
 To design and simulate a 4-bit Ripple Carry Adder using Verilog HDL with a task to implement the full adder functionality and verify its output using a testbench.
 To design and simulate a 4-bit Ripple Counter using Verilog HDL with a function to calculate the next state and verify its functionality using a testbench.
 
-Apparatus Required:
+# Apparatus Required:
 Computer with Vivado or any Verilog simulation software.
 Verilog HDL compiler.
 
-// Verilog Code
+# VERILOG CODE USING TASK:
+
+~~~
 module RippleCarryAdder_4bit (
     input [3:0] a,        
     input [3:0] b,        
@@ -35,12 +38,14 @@ module RippleCarryAdder_4bit (
         full_adder(a[3], b[3], c3, sum_reg[3], carry_out);
     end
 endmodule
+~~~
 
-OUTPUT:
+# OUTPUT:
 ![image](https://github.com/user-attachments/assets/2c752767-e664-49eb-8983-914cf6b1cfa6)
 
-// Test bench for Ripple carry adder
+# TESTBENCH FOR RIPLLE CARRY ADDER USING TASK:
 
+~~~
 module RippleCarryAdder_4bit_tb;
     reg [3:0] a, b;
     reg cin;
@@ -65,13 +70,15 @@ module RippleCarryAdder_4bit_tb;
         $stop;
     end
 endmodule
+~~~
 
-OUTPUT:
+# OUTPUT:
 ![image](https://github.com/user-attachments/assets/a007932e-ce18-453f-b992-364de35c4402)
 
 
-// Verilog Code ripple counter
+# VERILOG CODE FOR RCA USING FUNCTION:
 
+~~~
 module RippleCounter_4bit (
     input clk,          
     input rst,           
@@ -92,12 +99,13 @@ module RippleCounter_4bit (
             count_reg <= increment(count_reg); 
     end
 endmodule
+~~~
 
-OUTPUT:
+# OUTPUT:
 ![image](https://github.com/user-attachments/assets/d0049554-3c1e-4c47-bc3a-320e3dff94c2)
 
-// TestBench
-
+# TESTBENCH FOR RCA USING FUNCTION:
+~~~
 module RippleCounter_4bit_tb;
     reg clk;
     reg rst;
@@ -123,8 +131,9 @@ module RippleCounter_4bit_tb;
         $stop; 
     end
 endmodule
+~~~
 
-OUTPUT:
+# OUTPUT:
 ![image](https://github.com/user-attachments/assets/4aa9ec58-f669-49b4-af73-22eb777cb33d)
 
 Conclusion:
